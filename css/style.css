@@ -26,6 +26,12 @@ a:hover {
   opacity: 0.7;
   color: red;
 }
+
+.wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:  0px 20px;
+}
 /* ヘッダー部分 */
 header {
   max-width: 1400px;
