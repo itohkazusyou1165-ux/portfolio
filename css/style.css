@@ -185,6 +185,10 @@ justify-content: space-between;
   .profile-txt {
     width: 100%;
     font-size: 15px;
+     word-break: break-word;      
+  overflow-wrap: break-word; 
+    line-height: 24px;
+    font-weight: 450;
   }
   .profile-txt h3 {
 font-size: 15px;
@@ -250,7 +254,7 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
-  border: 5px solid black;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -508,7 +512,7 @@ margin: 0 auto;
   font-size: 16px;
   padding: 30px 66px;
   text-align: left;
-  line-height: 35px;
+  line-height: 27px;
 }
 
 .text-zone {
@@ -521,10 +525,17 @@ margin: 0 auto;
   }
   
   .skill-images img {
-    width: 130px;
+    width: 70px;
   }
   .skill-image img {
-    width: 100px;
+    width: 70px;
+  }
+  .skill-text{
+    word-break: break-word;      
+  overflow-wrap: break-word; 
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 450;
   }
 }
 
@@ -691,7 +702,8 @@ margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 66px 30px;
+  padding: 0px 30px;
+  padding-bottom: 30px;
 }
 
 .vision-text {
@@ -734,10 +746,15 @@ margin: 0 auto;
 }
 @media screen and (max-width: 760px) {
   .vision-txt {
+    margin: 0 auto;
     width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    
   }
   .My-vision{
     margin: 0 auto;
@@ -755,7 +772,7 @@ margin: 0 auto;
 }
 footer h2 {
   text-align: center;
-  font-size: 68px;
+  font-size: 58px;
   font-family: "EB Garamond";
   padding-bottom: 20px;
 }
@@ -792,6 +809,9 @@ footer p {
     margin: 0 auto;
     width: 90%;
     height: auto;
+  }
+  .footer h2{
+    font-size: 3px;
   }
   .image-area {
     display: flex;
