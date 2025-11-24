@@ -1,18 +1,32 @@
  @charset "UTF-8";
 
+:root{
+  --max-site-width: 1400px;
+  --container-padding: 16px;
+  --base-font-size: 16px;
+  --line-ratio: 1.6;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
-
-
 }
 body {
   background-color: #ffffff;
   color: #333;
   font-family: "YuGothic", "YuGothic", "sans-self";
+  margin: 0;
+  line-height: 1.6;
 }
 img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 li {
@@ -29,8 +43,15 @@ a:hover {
 
 .wrapper{
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   padding:  0px 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 /* ヘッダー部分 */
 header {
@@ -167,9 +188,7 @@ justify-content: space-between;
  line-height: 25px;
 
 }
- /* .profile-txt p{
-  font-size: 1px;
- } */
+ 
 
 @media (max-width: 767px) {
   .profile{
@@ -195,18 +214,12 @@ font-size: 15px;
 }
 }
 
-経歴
+/* 経歴 */
 
-/* 共通リセット */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-body {
-  padding: 50px 0;
-}
+
+
+
 
 /* career セクション上部 */
 /* スクロールイベントInter section observer使用 */
@@ -270,7 +283,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: orange;
+  background: rgb(25, 25, 24);
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -354,7 +367,7 @@ body {
   background: none;
   position: absolute;
   transform: translateX(-50%) rotate(-45deg);
-  border-left: 1px solid rgb(255, 225, 0);
+  border-left: 1px solid rgb(12, 12, 11);
   border-bottom: 1px solid orange;
   bottom: 0;
   left: 50%;
@@ -434,7 +447,7 @@ margin: 0 auto;
     content: "";
     width: 10px;
     height: 10px;
-    background: rgb(246, 255, 0);
+    background: rgb(24, 24, 24);
     position: absolute;
     border-radius: 50%;
     left: 0%;
@@ -790,7 +803,11 @@ footer p {
   padding: 25px 0px;
 }
 #go-top {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 @media screen and (max-width: 760px) {
