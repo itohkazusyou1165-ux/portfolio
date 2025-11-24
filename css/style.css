@@ -119,7 +119,7 @@ z-index: 10;
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header {
     display: none;
   }
@@ -190,7 +190,7 @@ justify-content: space-between;
 }
  
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .profile{
     width: 100%;
     margin: 0 auto;
@@ -270,7 +270,7 @@ font-size: 15px;
   
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .history {
     width: 1400px;
   }
@@ -299,7 +299,7 @@ font-size: 15px;
   z-index: 2;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .history__item {
     padding: 0 0 48px;
   }
@@ -320,7 +320,7 @@ font-size: 15px;
 }
 
 /* 偶数項目は右側へ */
-@media only screen and (min-width: 768px) {
+@media (min-width: 320px)  and (min-width: 768px) {
   .history__item:nth-of-type(even) {
     justify-content: flex-end;
   }
@@ -354,7 +354,7 @@ font-size: 15px;
   margin-right: 75px;
 }
 
-@media only screen and (min-width: 768px) {
+@media  (min-width: 320px) and (min-width: 768px) {
   .history__item:last-child {
     padding-bottom: 0;
   }
@@ -414,7 +414,7 @@ font-size: 15px;
 }
 
 /* スマホ：縦並び */
-@media screen and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .history:before {
     left: 20px;
     transform: none;
@@ -532,7 +532,7 @@ margin: 0 auto;
   margin-bottom: 100px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .Myskill{
     margin: 0 auto;
   }
@@ -658,7 +658,7 @@ margin: 0 auto;
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
   .works{
     margin: 0 auto;
@@ -757,7 +757,7 @@ margin: 0 auto;
 .vision-txt p.anim {
   opacity: 1;
 }
-@media screen and (max-width: 760px) {
+@media (min-width: 320px) and (max-width: 760px) {
   .vision-txt {
     margin: 0 auto;
     width: 90%;
@@ -810,7 +810,7 @@ footer p {
  
 }
 
-@media screen and (max-width: 760px) {
+@media (min-width: 320px) and (max-width: 760px) {
   .box {
     display: flex;
     flex-direction: column;
