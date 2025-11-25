@@ -1,20 +1,46 @@
+// ==========================================
+// 1. ハンバーガーメニューの機能
+// ==========================================
+const hamburgerBtn = document.querySelector("#js-hamburger"); 
+const nav = document.querySelector("#js-nav"); 
 
-
-// スクロールイベント
-
-document.querySelector("#go-top").addEventListener("click", () => {
-  scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
+// ボタンが存在する場合のみ実行
+if (hamburgerBtn && nav) {
+  hamburgerBtn.addEventListener("click", function () {
+    this.classList.toggle("active"); // ボタンのアニメーション
+    nav.classList.toggle("active");  // メニューの開閉
   });
-});
 
-//Intersection Observer
+  // メニュー内のリンクをクリックしたら閉じる
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburgerBtn.classList.remove("active");
+      nav.classList.remove("active");
+    });
+  });
+}
+
+// ==========================================
+// 2. スクロールトップ機能
+// ==========================================
+const goTopBtn = document.querySelector("#go-top");
+if (goTopBtn) {
+  goTopBtn.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
+// ==========================================
+// 3. Intersection Observer (アニメーション)
+// ==========================================
 const options = {
   root: null,
-  rootMargin: "0px 0px -10% 0px",
-  threshold: 0.2,
+  rootMargin: "0px 0px -10% 0px", // 画面の下10%くらいに来たら発火
+  threshold: 0,
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -27,21 +53,11 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, options);
 
-document.querySelectorAll(".career .history__item").forEach((el) => {
+// 監視する要素をまとめて指定（入れ子を解消）
+const targets = document.querySelectorAll(
+  ".career .history__item, .Myskill, .box, .vision-txt p, .vision-txt h2, .profile-area"
+);
+
+targets.forEach((el) => {
   observer.observe(el);
-  document.querySelectorAll(".Myskill").forEach((el) => {
-    observer.observe(el);
-    document.querySelectorAll(".box").forEach((el) => {
-      observer.observe(el);
-      document.querySelectorAll(".vision-txt p").forEach((el) => {
-        observer.observe(el);
-        document.querySelectorAll(".vision-txt h2").forEach((el) => {
-          observer.observe(el);
-          document.querySelectorAll(".profile-area").forEach((el) => {
-            observer.observe(el);
-          });
-        });
-      });
-    });
-  });
 });
