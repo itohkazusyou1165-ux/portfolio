@@ -1,19 +1,9 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
-@charset "UTF-8";
-
 :root {
   --max-site-width: 1000px; /* サイト最大幅 */
   --base-font-color: #333;
   --accent-color: rgb(233, 85, 68);
-=======
-:root {
-  --max-site-width: 1400px;
-  --container-padding: 16px;
-  --base-font-size: 16px;
-  --line-ratio: 1.6;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 /* =========================================================
@@ -60,20 +50,11 @@ a:hover {
   color: red;
 }
 
-<<<<<<< HEAD
 /* 共通コンテナ設定 */
 .wrapper {
   max-width: var(--max-site-width);
-=======
-.wrapper {
-  max-width: 1000px;
-  min-width: 350px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   width: 100%;
-  height: auto;
-  box-sizing: border-box;
   margin: 0 auto;
-<<<<<<< HEAD
   padding: 0 15px; /* スマホ時の横余白 */
   overflow: hidden; /* 横スクロール防止 */
 }
@@ -96,18 +77,10 @@ a:hover {
 /* =========================================================
    Header
    ========================================================= */
-=======
-  padding: 0px 15px;
-  overflow: hidden;
-}
-
-/* ヘッダー部分 */
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 header {
   max-width: var(--max-site-width);
   width: 100%;
   margin: 0 auto;
-<<<<<<< HEAD
   padding: 10px 15px;
   position: fixed;
   top: 0;
@@ -115,11 +88,6 @@ header {
   right: 0;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.95);
-=======
-  position: fixed;
-  top: 0;
-  z-index: 10;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,17 +96,10 @@ header {
 .navi {
   display: flex;
   gap: 20px;
-<<<<<<< HEAD
   font-size: 1.25rem;
   font-family: "Caveat", cursive;
   margin: 0;
   padding: 0;
-=======
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "Caveat";
-  font-weight: normal;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 /* =========================================================
@@ -154,7 +115,6 @@ header {
 }
 
 .view-text {
-<<<<<<< HEAD
   width: 45%;
   text-align: center;
 }
@@ -164,34 +124,12 @@ header {
   font-family: "Caveat", cursive;
   line-height: 1.2;
   margin-bottom: 20px;
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  background-color: rgb(255, 255, 255);
-}
-
-.view-text h2 {
-  max-width: 100%;
-  font-size: 50px;
-  font-family: "Caveat";
-  font-weight: bold;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .view-text p {
-<<<<<<< HEAD
   font-size: 1rem;
   font-family: "Zen Old Mincho", serif;
   margin-bottom: 10px;
-=======
-  font-size: 20px;
-  font-family: "Zen Old Mincho";
-  padding: 20px 20px;
-  text-align: center;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .view-img {
@@ -199,36 +137,9 @@ header {
   margin: 0;
 }
 
-<<<<<<< HEAD
 /* =========================================================
    Profile
    ========================================================= */
-=======
-/* ハンバーガーメニュー */
-
-@media screen and (max-width: 767px) {
-  header {
-    display: none;
-  }
-
-  .view {
-    display: flex;
-
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .view-text h2 {
-    white-space: nowrap;
-    font-size: 70px;
-  }
-  .view-text p {
-    font-size: 18px;
-    white-space: nowrap;
-  }
-}
-/* プロフィール欄 */
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 .profile {
   margin-bottom: 80px;
 }
@@ -244,29 +155,17 @@ header {
   display: flex;
   flex-direction: column; /* スマホファースト */
   align-items: center;
-<<<<<<< HEAD
-=======
-  justify-content: space-between;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   gap: 30px;
 }
 
 .profile-area img {
-<<<<<<< HEAD
   width: 100%;
   max-width: 400px;
   border-radius: 50%;
   object-fit: cover;
-=======
-  width: 700px;
-  height: 350px;
-  border-radius: 100%;
-  object-fit: contain;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .profile-txt {
-<<<<<<< HEAD
   width: 100%;
   max-width: 700px;
   line-height: 1.8;
@@ -280,20 +179,6 @@ header {
 
 /* PCサイズ (768px以上) */
 @media (min-width: 768px) {
-=======
-  font-size: 16px;
-  width: 100%;
-  height: auto;
-  padding: 30px 15px;
-  line-height: 25px;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .profile {
-    width: 100%;
-    margin: 0 auto;
-  }
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   .profile-area {
     flex-direction: row; /* 横並びに戻す */
     justify-content: center;
@@ -303,21 +188,8 @@ header {
     width: 40%;
   }
   .profile-txt {
-<<<<<<< HEAD
     width: 55%;
   }
-=======
-    width: 100%;
-    font-size: 15px;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    line-height: 24px;
-    font-weight: 450;
-  }
-  .profile-txt h3 {
-    font-size: 15px;
-  }
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 /* =========================================================
@@ -331,37 +203,14 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-<<<<<<< HEAD
   margin-bottom: 40px;
-=======
-  padding: 66px 30px;
-}
-.career-top h2 {
-  font-size: 45px;
-  font-family: "Caveat";
-  padding: 1rem 2rem;
-  border-left: 6px double #000;
-  font-size: clamp(45px, 35px, 15px);
-}
-.career .career-top {
-  text-align: center;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .history {
-<<<<<<< HEAD
-=======
-  min-width: 350px;
-  max-width: 1000px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-<<<<<<< HEAD
-=======
-  padding: 0 15px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 /* タイムラインの縦線 */
@@ -378,8 +227,6 @@ header {
 
 /* 各アイテム */
 .history__item {
-  max-width: 1000px;
-  width: 90%;
   position: relative;
   padding: 0 0 40px 40px; /* 左に線の分の余白 */
 }
@@ -398,7 +245,6 @@ header {
   z-index: 3;
 }
 
-<<<<<<< HEAD
 .history__text h3 {
   font-size: 1.5rem;
   margin: 0 0 10px;
@@ -413,12 +259,6 @@ header {
   .history::before {
     left: 50%;
     transform: translateX(-50%);
-=======
-/* 偶数項目は右側へ */
-@media (min-width: 320px) and (min-width: 768px) {
-  .history__item:nth-of-type(even) {
-    justify-content: flex-end;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   }
 
   .history__item {
@@ -453,161 +293,9 @@ header {
   }
 }
 
-<<<<<<< HEAD
 /* =========================================================
    Skill
    ========================================================= */
-=======
-/* 最後の項目の終端装飾 */
-.history__item:last-child {
-  padding-bottom: 15px;
-}
-.history__text:last-child {
-  margin-left: 75px;
-}
-.history__text:first-child {
-  margin-right: 75px;
-}
-
-.history__text:second-child {
-  margin-left: 75px;
-}
-
-.history__text:third-child {
-  margin-right: 75px;
-}
-
-@media (min-width: 320px) and (min-width: 768px) {
-  .history__item:last-child {
-    padding-bottom: 0;
-  }
-}
-
-.history__item:last-child:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: none;
-  position: absolute;
-  transform: translateX(-50%) rotate(-45deg);
-  border-left: 1px solid rgb(12, 12, 11);
-  border-bottom: 1px solid orange;
-  bottom: 0;
-  left: 50%;
-}
-
-/* 内部 */
-.history__inner {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 740px;
-}
-
-.history__iamge img {
-  display: block;
-  width: 220px;
-  height: auto;
-  box-shadow: 0 0 15px rgba(30, 29, 29, 0.25);
-  border-radius: 4px;
-}
-
-.history__text {
-  border: 1px;
-  flex: 1;
-  padding-top: 4px;
-  letter-spacing: 0.02em;
-  line-height: 100px;
-  border: 1px solid black;
-}
-
-.history__text h3 {
-  margin: 0 0 8px;
-  font-size: 30px;
-}
-
-.history__text p {
-  margin: 0 0 12px;
-  line-height: 1.6;
-}
-
-.history__text .highlight {
-  color: rgb(233, 85, 68);
-  font-weight: 600;
-}
-
-/* スマホ：縦並び */
-@media (min-width: 320px) and (max-width: 767px) {
-  .history:before {
-    left: 20px;
-    transform: none;
-  }
-  .history {
-    margin: 0 auto;
-    text-align: left;
-    border: 1px solid black;
-  }
-  .history__item {
-    width: 100%;
-    padding-right: 100px;
-  }
-
-  .history__item:before {
-    border: 1px solid black;
-    left: 20px;
-    transform: none;
-  }
-
-  .history__inner {
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .history__iamge img {
-    width: 100%;
-    max-width: 360px;
-    margin-bottom: 10px;
-  }
-
-  .history__item:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: rgb(24, 24, 24);
-    position: absolute;
-    border-radius: 50%;
-    left: 0%;
-    top: 8px;
-    z-index: 3;
-  }
-  .career {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .history__text {
-    /* white-space: nowrap; */
-
-    height: auto;
-    font-size: 15px;
-    word-wrap: break-word;
-  }
-  body,
-  section,
-  .career,
-  .history__item,
-  .profile-txt {
-    writing-mode: horizontal-tb !important;
-    -webkit-writing-mode: horizontal-tb !important;
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: break-word !important;
-  }
-}
-
-/* スキル欄 */
-
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 .Myskill {
   margin-bottom: 80px;
 }
@@ -627,7 +315,6 @@ header {
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .skill-container img {
     width: 60px; /* アイコンサイズ統一 */
     height: auto;
@@ -635,68 +322,6 @@ header {
 
 .skill-text {
   max-width: 800px;
-=======
-.skill-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-
-  padding: 45px 15px;
-  background-color: white;
-  max-width: 100%;
-  height: auto;
-}
-
-.skill-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 45px 45px;
-  background-color: white;
-}
-
-.skill-text {
-  width: 100%;
-  background-color: #ffffff;
-  font-size: 16px;
-  padding: 30px 20px;
-  text-align: left;
-  line-height: 27px;
-}
-
-.text-zone {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .Myskill {
-    margin: 0 auto;
-  }
-
-  .skill-images img {
-    width: 70px;
-  }
-  .skill-image img {
-    width: 70px;
-  }
-  .skill-text {
-    word-break: break-word;
-    overflow-wrap: break-word;
-    line-height: 24px;
-    font-size: 15px;
-    font-weight: 450;
-  }
-}
-
-/* カードセクション */
-
-.Works {
-  max-width: 1000px;
-  width: 90%;
-  height: auto;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   margin: 0 auto;
   line-height: 1.8;
   padding: 20px;
@@ -715,27 +340,11 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-<<<<<<< HEAD
   margin-bottom: 40px;
-=======
-  padding: 66px 15px;
-  font-size: 30px;
-  font-family: "EB Garamond";
-}
-
-.works-top h2 {
-  font-family: "Caveat";
-  padding: 1rem 2rem;
-  border-left: 6px double #000;
-}
-.works-top p {
-  font-size: 20px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .box-area {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 1fr; /* スマホは1列 */
   gap: 30px;
 }
@@ -744,14 +353,6 @@ header {
   .box-area {
     grid-template-columns: repeat(3, 1fr); /* PCは3列 */
   }
-=======
-  gap: 1rem; /* カード間の余白 */
-  grid-template-columns: repeat(3, 1fr); /* PC: 3列・均等幅 */
-  align-items: start;
-  width: 90%;
-  margin: 0 auto;
-  height: auto;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .box {
@@ -809,50 +410,9 @@ header {
   font-size: 0.9rem;
 }
 
-<<<<<<< HEAD
 /* =========================================================
    Vision
    ========================================================= */
-=======
-/* レスポンシブ対応 */
-@media screen and (max-width: 767px) {
-  .works {
-    margin: 0 auto;
-  }
-  .box {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .box__txt {
-    padding-bottom: 30px;
-  }
-  .box.reverse {
-    display: block;
-    flex-direction: row-reverse;
-  }
-  .box + .box {
-    margin-top: 60px;
-  }
-  .box__body {
-    width: 100%;
-    padding: 0;
-  }
-  .box__image {
-    width: 100%;
-  }
-  .box-area {
-    display: block;
-    flex-direction: column;
-  }
-  .box-link {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 10px;
-  }
-}
-/* なりたい将来像 */
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 .My-vision {
   margin-bottom: 80px;
 }
@@ -866,14 +426,7 @@ header {
 
 .vision-txt {
   text-align: center;
-<<<<<<< HEAD
   max-width: 800px;
-=======
-  line-height: 15px;
-  padding: 0px 15px;
-  height: auto;
-  font-size: 15px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   margin: 0 auto;
 }
 .vision-txt h2 {
@@ -881,7 +434,6 @@ header {
     margin-bottom: 2rem;
 }
 
-<<<<<<< HEAD
 /* =========================================================
    Footer
    ========================================================= */
@@ -889,30 +441,6 @@ footer {
   text-align: center;
   padding: 40px 0;
   background-color: #f4f4f4;
-=======
-.vision-txt p {
-  padding-top: 41px;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-.vision-txt p.anim {
-  opacity: 1;
-}
-@media (min-width: 320px) and (max-width: 760px) {
-  .vision-txt {
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    line-height: 24px;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  .My-vision {
-    margin: 0 auto;
-  }
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 .footer-text h2 {
@@ -929,15 +457,8 @@ footer {
 }
 
 #go-top {
-<<<<<<< HEAD
   cursor: pointer;
   margin-top: 20px;
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
 }
 
 /* =========================================================
@@ -962,13 +483,8 @@ footer {
     padding-top: 20px;
     text-align: center;
   }
-<<<<<<< HEAD
   .view-text {
     width: 100%;
-=======
-  .footer h2 {
-    font-size: 3px;
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   }
   .view-img {
     width: 100%;
@@ -1075,7 +591,6 @@ footer {
     align-items: center;
     box-shadow: -5px 0 10px rgba(0,0,0,0.1);
   }
-<<<<<<< HEAD
 
   /* メニューが開いた時 */
   .nav-menu.active {
@@ -1093,6 +608,3 @@ footer {
     color: #333;
   }
 }
-=======
-}
->>>>>>> b25c04ba409a35e50620f58d486043082512da64

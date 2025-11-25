@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // ==========================================
 // 1. ハンバーガーメニューの機能
 // ==========================================
@@ -10,15 +9,6 @@ if (hamburgerBtn && nav) {
   hamburgerBtn.addEventListener("click", function () {
     this.classList.toggle("active"); // ボタンのアニメーション
     nav.classList.toggle("active");  // メニューの開閉
-=======
-// スクロールイベント
-
-document.querySelector("#go-top").addEventListener("click", () => {
-  scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
->>>>>>> b25c04ba409a35e50620f58d486043082512da64
   });
 
   // メニュー内のリンクをクリックしたら閉じる
