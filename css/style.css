@@ -46,6 +46,7 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   padding: 0px 15px;
+  overflow: hidden;
 }
 
 .flex {
@@ -111,7 +112,6 @@ header {
   font-family: "Zen Old Mincho";
   padding: 20px 20px;
   text-align: center;
-  white-space: nowrap;
 }
 
 .view-img {
@@ -127,6 +127,7 @@ header {
 
   .view {
     display: flex;
+
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -182,7 +183,7 @@ header {
 }
 .profile-txt {
   font-size: 16px;
-  width: 700px;
+  width: 100%;
   height: auto;
   padding: 30px 22px;
   line-height: 25px;
@@ -256,6 +257,7 @@ header {
 
 /* timeline */
 .history {
+  min-width: 350px;
   max-width: 1000px;
   position: relative;
   margin: 0 auto;
@@ -395,7 +397,7 @@ header {
 
 .history__text h3 {
   margin: 0 0 8px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .history__text p {
@@ -458,9 +460,10 @@ header {
   }
   .history__text {
     /* white-space: nowrap; */
-    width: 350px;
+
     height: auto;
     font-size: 15px;
+    word-wrap: break-word;
   }
   body,
   section,
@@ -532,9 +535,10 @@ header {
 }
 
 .skill-text {
+  width: 100%;
   background-color: #ffffff;
   font-size: 16px;
-  padding: 30px 66px;
+  padding: 30px 20px;
   text-align: left;
   line-height: 27px;
 }
@@ -745,7 +749,6 @@ header {
   text-align: center;
   line-height: 15px;
   padding: 0px 15px;
-
   height: auto;
   font-size: 15px;
   margin: 0 auto;
