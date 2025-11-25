@@ -284,6 +284,7 @@ header {
 /* 各アイテム */
 .history__item {
   max-width: 1000px;
+  width: 90%;
   position: relative;
   width: 100%;
   display: flex;
@@ -389,6 +390,7 @@ header {
   padding-top: 4px;
   letter-spacing: 0.02em;
   line-height: 100px;
+  border: 1px solid black;
 }
 
 .history__text h3 {
@@ -414,12 +416,16 @@ header {
   }
   .history {
     margin: 0 auto;
+    text-align: left;
+    border: 1px solid black;
   }
   .history__item {
+    width: 100%;
     padding-right: 100px;
   }
 
   .history__item:before {
+    border: 1px solid black;
     left: 20px;
     transform: none;
   }
@@ -452,8 +458,20 @@ header {
   }
   .history__text {
     /* white-space: nowrap; */
-    max-width: 800px;
+    width: 350px;
+    height: auto;
     font-size: 15px;
+  }
+  body,
+  section,
+  .career,
+  .history__item,
+  .profile-txt {
+    writing-mode: horizontal-tb !important;
+    -webkit-writing-mode: horizontal-tb !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
   }
 }
 
