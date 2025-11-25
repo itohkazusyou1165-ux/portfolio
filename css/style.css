@@ -1,6 +1,6 @@
- @charset "UTF-8";
+@charset "UTF-8";
 
-:root{
+:root {
   --max-site-width: 1400px;
   --container-padding: 16px;
   --base-font-size: 16px;
@@ -41,11 +41,11 @@ a:hover {
   color: red;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding:  0px 15px;
+  padding: 0px 15px;
 }
 
 .flex {
@@ -58,9 +58,9 @@ header {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-position: fixed;
-top: 0;
-z-index: 10;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +74,6 @@ z-index: 10;
   font-size: 20px;
   font-family: "Caveat";
   font-weight: normal;
-  
 }
 
 .view {
@@ -121,19 +120,16 @@ z-index: 10;
 
 /* ハンバーガーメニュー */
 
-
-
-@media screen  and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   header {
     display: none;
   }
 
-
   .view {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
   .view-text h2 {
     white-space: nowrap;
@@ -167,7 +163,7 @@ z-index: 10;
 .profile-area {
   display: flex;
   align-items: center;
-justify-content: space-between;
+  justify-content: space-between;
   gap: 30px;
   opacity: 0;
   transition: opacity 1s ease;
@@ -185,18 +181,15 @@ justify-content: space-between;
   /* margin: 134px 60px; */
 }
 .profile-txt {
-  
   font-size: 16px;
   width: 700px;
   height: auto;
   padding: 30px 22px;
- line-height: 25px;
-
+  line-height: 25px;
 }
- 
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .profile{
+  .profile {
     width: 100%;
     margin: 0 auto;
   }
@@ -209,14 +202,14 @@ justify-content: space-between;
   .profile-txt {
     width: 100%;
     font-size: 15px;
-     word-break: break-word;      
-  overflow-wrap: break-word; 
+    word-break: break-word;
+    overflow-wrap: break-word;
     line-height: 24px;
     font-weight: 450;
   }
   .profile-txt h3 {
-font-size: 15px;
-}
+    font-size: 15px;
+  }
 }
 
 /* 経歴 */
@@ -263,11 +256,10 @@ font-size: 15px;
 
 /* timeline */
 .history {
- max-width: 1000px;
+  max-width: 1000px;
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
-  
 }
 
 @media (min-width: 320px) and (min-width: 768px) {
@@ -291,6 +283,7 @@ font-size: 15px;
 
 /* 各アイテム */
 .history__item {
+  max-width: 1000px;
   position: relative;
   width: 100%;
   display: flex;
@@ -320,7 +313,7 @@ font-size: 15px;
 }
 
 /* 偶数項目は右側へ */
-@media (min-width: 320px)  and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .history__item:nth-of-type(even) {
     justify-content: flex-end;
   }
@@ -354,7 +347,7 @@ font-size: 15px;
   margin-right: 75px;
 }
 
-@media  (min-width: 320px) and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .history__item:last-child {
     padding-bottom: 0;
   }
@@ -419,9 +412,9 @@ font-size: 15px;
     left: 20px;
     transform: none;
   }
-.history{
-margin: 0 auto;
-}
+  .history {
+    margin: 0 auto;
+  }
   .history__item {
     padding-right: 100px;
   }
@@ -432,7 +425,6 @@ margin: 0 auto;
   }
 
   .history__inner {
-   
     flex-direction: column;
     max-width: 100%;
   }
@@ -454,12 +446,12 @@ margin: 0 auto;
     top: 8px;
     z-index: 3;
   }
-  .career{
+  .career {
     max-width: 1000px;
     margin: 0 auto;
   }
-  .history__text{ 
-    white-space: nowrap;
+  .history__text {
+    /* white-space: nowrap; */
     max-width: 800px;
     font-size: 15px;
   }
@@ -534,19 +526,19 @@ margin: 0 auto;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .Myskill{
+  .Myskill {
     margin: 0 auto;
   }
-  
+
   .skill-images img {
     width: 70px;
   }
   .skill-image img {
     width: 70px;
   }
-  .skill-text{
-    word-break: break-word;      
-  overflow-wrap: break-word; 
+  .skill-text {
+    word-break: break-word;
+    overflow-wrap: break-word;
     line-height: 24px;
     font-size: 15px;
     font-weight: 450;
@@ -588,7 +580,7 @@ margin: 0 auto;
   grid-template-columns: repeat(3, 1fr); /* PC: 3列・均等幅 */
   align-items: start;
   width: 90%;
-margin: 0 auto;
+  margin: 0 auto;
   height: auto;
 }
 
@@ -660,8 +652,7 @@ margin: 0 auto;
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
-
-  .works{
+  .works {
     margin: 0 auto;
   }
   .box {
@@ -736,7 +727,7 @@ margin: 0 auto;
   text-align: center;
   line-height: 15px;
   padding: 0px 15px;
-  
+
   height: auto;
   font-size: 15px;
   margin: 0 auto;
@@ -770,9 +761,8 @@ margin: 0 auto;
     line-height: 24px;
     font-size: 15px;
     font-weight: 400;
-    
   }
-  .My-vision{
+  .My-vision {
     margin: 0 auto;
   }
 }
@@ -810,7 +800,6 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 @media (min-width: 320px) and (max-width: 760px) {
@@ -830,7 +819,7 @@ footer p {
     width: 90%;
     height: auto;
   }
-  .footer h2{
+  .footer h2 {
     font-size: 3px;
   }
   .image-area {
@@ -840,4 +829,4 @@ footer p {
     gap: 30px;
     padding: 25px 0px;
   }
-} 
+}
