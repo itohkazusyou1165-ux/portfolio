@@ -1,14 +1,13 @@
-// ==========================================
-// 1. ハンバーガーメニューの機能
-// ==========================================
+//  ハンバーガーメニューの機能
+
 const hamburgerBtn = document.querySelector("#js-hamburger"); 
 const nav = document.querySelector("#js-nav"); 
 
 // ボタンが存在する場合のみ実行
 if (hamburgerBtn && nav) {
   hamburgerBtn.addEventListener("click", function () {
-    this.classList.toggle("active"); // ボタンのアニメーション
-    nav.classList.toggle("active");  // メニューの開閉
+    this.classList.toggle("active");
+    nav.classList.toggle("active"); 
   });
 
   // メニュー内のリンクをクリックしたら閉じる
@@ -20,9 +19,9 @@ if (hamburgerBtn && nav) {
   });
 }
 
-// ==========================================
-// 2. スクロールトップ機能
-// ==========================================
+
+//  スクロールトップ機能
+
 const goTopBtn = document.querySelector("#go-top");
 if (goTopBtn) {
   goTopBtn.addEventListener("click", () => {
@@ -34,12 +33,12 @@ if (goTopBtn) {
   });
 }
 
-// ==========================================
-// 3. Intersection Observer (アニメーション)
-// ==========================================
+
+//. Intersection Observer (アニメーション)
+
 const options = {
   root: null,
-  rootMargin: "0px 0px -10% 0px", // 画面の下10%くらいに来たら発火
+  rootMargin: "0px 0px -10% 0px", 
   threshold: 0,
 };
 
@@ -53,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, options);
 
-// 監視する要素をまとめて指定（入れ子を解消）
+// 監視する要素をまとめて指定
 const targets = document.querySelectorAll(
   ".career .history__item, .Myskill, .box, .vision-txt p, .vision-txt h2, .profile-area"
 );

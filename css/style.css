@@ -1,14 +1,12 @@
 @charset "UTF-8";
 
 :root {
-  --max-site-width: 1000px; /* サイト最大幅 */
+  --max-site-width: 1000px;
   --base-font-color: #333;
   --accent-color: rgb(233, 85, 68);
 }
 
-/* =========================================================
-   Reset & Global
-   ========================================================= */
+
 *,
 *::before,
 *::after {
@@ -55,13 +53,13 @@ a:hover {
   max-width: var(--max-site-width);
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px; /* スマホ時の横余白 */
-  overflow: hidden; /* 横スクロール防止 */
+  padding: 0 15px;
+  overflow: hidden; 
 }
 
 /* 見出しの共通スタイル */
 .title {
-  font-size: 2.5rem; /* 40px相当 */
+  font-size: 2.5rem; 
   font-family: "Caveat", cursive;
   padding: 0.5rem 1rem;
   border-left: 6px double #000;
@@ -74,9 +72,6 @@ a:hover {
   margin-top: 5px;
 }
 
-/* =========================================================
-   Header
-   ========================================================= */
 header {
   max-width: var(--max-site-width);
   width: 100%;
@@ -102,15 +97,13 @@ header {
   padding: 0;
 }
 
-/* =========================================================
-   First View (KV)
-   ========================================================= */
+
 .view {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 120px; /* ヘッダー固定分の余白 */
+  padding-top: 120px; 
   margin-bottom: 60px;
 }
 
@@ -137,9 +130,7 @@ header {
   margin: 0;
 }
 
-/* =========================================================
-   Profile
-   ========================================================= */
+
 .profile {
   margin-bottom: 80px;
 }
@@ -153,7 +144,7 @@ header {
 
 .profile-area {
   display: flex;
-  flex-direction: column; /* スマホファースト */
+  flex-direction: column; 
   align-items: center;
   gap: 30px;
 }
@@ -177,10 +168,10 @@ header {
   margin-bottom: 1rem;
 }
 
-/* PCサイズ (768px以上) */
+
 @media (min-width: 768px) {
   .profile-area {
-    flex-direction: row; /* 横並びに戻す */
+    flex-direction: row; 
     justify-content: center;
     align-items: flex-start;
   }
@@ -192,9 +183,6 @@ header {
   }
 }
 
-/* =========================================================
-   Career (Timeline)
-   ========================================================= */
 .career {
   margin-bottom: 80px;
 }
@@ -221,17 +209,17 @@ header {
   bottom: 0;
   width: 2px;
   background: #333;
-  left: 20px; /* スマホは左端 */
+  left: 20px;
   z-index: 1;
 }
 
 /* 各アイテム */
 .history__item {
   position: relative;
-  padding: 0 0 40px 40px; /* 左に線の分の余白 */
+  padding: 0 0 40px 40px; 
 }
 
-/* タイムラインの丸ポチ */
+
 .history__item::before {
   content: "";
   width: 12px;
@@ -240,7 +228,7 @@ header {
   border: 2px solid #333;
   position: absolute;
   border-radius: 50%;
-  left: 15px; /* 線の上に配置 */
+  left: 15px; 
   top: 5px;
   z-index: 3;
 }
@@ -254,7 +242,7 @@ header {
   font-weight: bold;
 }
 
-/* PCサイズ: 中央線レイアウト */
+/*  中央線レイアウト */
 @media (min-width: 768px) {
   .history::before {
     left: 50%;
@@ -262,8 +250,8 @@ header {
   }
 
   .history__item {
-    width: 50%; /* 全体の半分 */
-    padding: 0 30px 40px 0; /* 右に余白 */
+    width: 50%; 
+    padding: 0 30px 40px 0; 
     clear: both;
   }
   
@@ -274,17 +262,17 @@ header {
 
   /* 偶数番目は右側に配置 */
   .history__item:nth-of-type(even) {
-    margin-left: 50%; /* 左側を50%空ける */
-    padding: 0 0 40px 30px; /* 左に余白 */
+    margin-left: 50%; 
+    padding: 0 0 40px 30px;
     text-align: left;
   }
 
   .history__item:nth-of-type(even)::before {
-    left: -8px; /* 丸ポチを左端（中央）へ */
+    left: -8px; 
     right: auto;
   }
   
-  /* 奇数番目は右寄せテキスト */
+ 
   .history__item:nth-of-type(odd) {
     text-align: right;
   }
@@ -293,9 +281,7 @@ header {
   }
 }
 
-/* =========================================================
-   Skill
-   ========================================================= */
+
 .Myskill {
   margin-bottom: 80px;
 }
@@ -316,7 +302,7 @@ header {
 }
 
 .skill-container img {
-    width: 60px; /* アイコンサイズ統一 */
+    width: 60px;
     height: auto;
 }
 
@@ -329,9 +315,7 @@ header {
   border-radius: 8px;
 }
 
-/* =========================================================
-   Works
-   ========================================================= */
+
 .Works {
   margin-bottom: 80px;
 }
@@ -410,9 +394,7 @@ header {
   font-size: 0.9rem;
 }
 
-/* =========================================================
-   Vision
-   ========================================================= */
+
 .My-vision {
   margin-bottom: 80px;
 }
@@ -434,9 +416,7 @@ header {
     margin-bottom: 2rem;
 }
 
-/* =========================================================
-   Footer
-   ========================================================= */
+
 footer {
   text-align: center;
   padding: 40px 0;
@@ -461,9 +441,8 @@ footer {
   margin-top: 20px;
 }
 
-/* =========================================================
-   Mobile Optimization (768px以下)
-   ========================================================= */
+
+  
 @media screen and (max-width: 767px) {
   /* ヘッダー */
   header {
@@ -477,9 +456,9 @@ footer {
       justify-content: center;
   }
 
-  /* KV */
+  
   .view {
-    flex-direction: column-reverse; /* 画像を上に、文字を下に */
+    flex-direction: column-reverse;
     padding-top: 20px;
     text-align: center;
   }
@@ -491,7 +470,7 @@ footer {
     margin-bottom: 20px;
   }
   .view-text h2 {
-    font-size: 3rem; /* スマホ用に少し小さく */
+    font-size: 3rem; 
   }
 
   /* フォントサイズ調整 */
@@ -500,9 +479,7 @@ footer {
   }
 }
 
-/* ==============================================
-   追加: アニメーション用（初期状態を透明に）
-   ============================================== */
+/*  追加: アニメーション用（初期状態を透明に） */
 .career .history__item,
 .Myskill,
 .box,
@@ -510,7 +487,7 @@ footer {
 .vision-txt h2,
 .profile-area {
   opacity: 0;
-  transform: translateY(20px); /* 少し下からふわっと */
+  transform: translateY(20px); 
   transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -526,11 +503,9 @@ footer {
 }
 
 
-/* ==============================================
-   追加: ハンバーガーメニュー (スマホ用)
-   ============================================== */
+/*ハンバーガーメニュー (スマホ用)*/
 .hamburger {
-  display: none; /* PCでは非表示 */
+  display: none; 
 }
 
 @media screen and (max-width: 767px) {
@@ -542,7 +517,7 @@ footer {
     right: 20px;
     width: 40px;
     height: 40px;
-    background: #333; /* ボタンの背景色 */
+    background: #333;
     border: none;
     border-radius: 4px;
     z-index: 200;
@@ -553,7 +528,7 @@ footer {
     display: block;
     width: 24px;
     height: 2px;
-    background: #fff; /* 線の色 */
+    background: #fff;
     position: absolute;
     left: 8px;
     transition: 0.3s;
@@ -563,7 +538,7 @@ footer {
   .hamburger span:nth-child(2) { top: 19px; }
   .hamburger span:nth-child(3) { top: 26px; }
 
-  /* クリック時の×印変形 */
+  /* クリック時 */
   .hamburger.active span:nth-child(1) {
     top: 19px;
     transform: rotate(45deg);
@@ -576,11 +551,11 @@ footer {
     transform: rotate(-45deg);
   }
 
-  /* メニュー本体（通常は隠す） */
+  /* メニュー本体 */
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%; /* 画面外へ飛ばす */
+    right: -100%; 
     width: 80%;
     height: 100vh;
     background: rgba(255, 255, 255, 0.98);
