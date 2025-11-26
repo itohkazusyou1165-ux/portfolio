@@ -6,7 +6,6 @@
   --accent-color: rgb(233, 85, 68);
 }
 
-
 *,
 *::before,
 *::after {
@@ -24,11 +23,11 @@ body {
   font-family: "YuGothic", "Yu Gothic", sans-serif;
   margin: 0;
   line-height: 1.6;
-  min-width: 350px; /* 最小幅設定 */
+  min-width: 350px;
 }
 
 img {
-  max-width: 100%; /* これで画像がはみ出すのを防ぎます */
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -54,12 +53,12 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* 見出しの共通スタイル */
 .title {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-family: "Caveat", cursive;
   padding: 0.5rem 1rem;
   border-left: 6px double #000;
@@ -97,13 +96,12 @@ header {
   padding: 0;
 }
 
-
 .view {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 120px; 
+  padding-top: 120px;
   margin-bottom: 60px;
 }
 
@@ -130,7 +128,6 @@ header {
   margin: 0;
 }
 
-
 .profile {
   margin-bottom: 80px;
 }
@@ -144,7 +141,7 @@ header {
 
 .profile-area {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
@@ -168,10 +165,9 @@ header {
   margin-bottom: 1rem;
 }
 
-
 @media (min-width: 768px) {
   .profile-area {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
@@ -216,9 +212,8 @@ header {
 /* 各アイテム */
 .history__item {
   position: relative;
-  padding: 0 0 40px 40px; 
+  padding: 0 0 40px 40px;
 }
-
 
 .history__item::before {
   content: "";
@@ -228,7 +223,7 @@ header {
   border: 2px solid #333;
   position: absolute;
   border-radius: 50%;
-  left: 15px; 
+  left: 15px;
   top: 5px;
   z-index: 3;
 }
@@ -250,11 +245,11 @@ header {
   }
 
   .history__item {
-    width: 50%; 
-    padding: 0 30px 40px 0; 
+    width: 50%;
+    padding: 0 30px 40px 0;
     clear: both;
   }
-  
+
   .history__item::before {
     left: auto;
     right: -8px; /* 丸ポチを右端（中央）へ */
@@ -262,25 +257,23 @@ header {
 
   /* 偶数番目は右側に配置 */
   .history__item:nth-of-type(even) {
-    margin-left: 50%; 
+    margin-left: 50%;
     padding: 0 0 40px 30px;
     text-align: left;
   }
 
   .history__item:nth-of-type(even)::before {
-    left: -8px; 
+    left: -8px;
     right: auto;
   }
-  
- 
+
   .history__item:nth-of-type(odd) {
     text-align: right;
   }
   .history__item:nth-of-type(odd) .history__inner {
-     justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
-
 
 .Myskill {
   margin-bottom: 80px;
@@ -294,16 +287,16 @@ header {
 }
 
 .skill-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 100px 0px;
 }
 
 .skill-container img {
-    width: 60px;
-    height: auto;
+  width: 80px;
+  height: auto;
 }
 
 .skill-text {
@@ -314,7 +307,16 @@ header {
   background: #f9f9f9;
   border-radius: 8px;
 }
-
+.skill-image {
+  display: flex;
+  object-fit: cover;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.skill-images {
+  display: flex;
+  gap: 20px;
+}
 
 .Works {
   margin-bottom: 80px;
@@ -367,7 +369,7 @@ header {
   background: #fff;
 }
 .bird_image img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .box__body h2 {
@@ -394,7 +396,6 @@ header {
   font-size: 0.9rem;
 }
 
-
 .My-vision {
   margin-bottom: 80px;
 }
@@ -412,15 +413,14 @@ header {
   margin: 0 auto;
 }
 .vision-txt h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
-
 
 footer {
   text-align: center;
   padding: 40px 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .footer-text h2 {
@@ -440,23 +440,24 @@ footer {
   cursor: pointer;
   margin-top: 20px;
 }
+#go-top img {
+  margin: 20px 0px;
+  margin: 0 auto;
+}
 
-
-  
 @media screen and (max-width: 767px) {
   /* ヘッダー */
   header {
-    position: relative; 
+    position: relative;
     flex-direction: column;
     gap: 10px;
   }
   .navi {
-      font-size: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  
   .view {
     flex-direction: column-reverse;
     padding-top: 20px;
@@ -470,7 +471,7 @@ footer {
     margin-bottom: 20px;
   }
   .view-text h2 {
-    font-size: 3rem; 
+    font-size: 3rem;
   }
 
   /* フォントサイズ調整 */
@@ -487,7 +488,7 @@ footer {
 .vision-txt h2,
 .profile-area {
   opacity: 0;
-  transform: translateY(20px); 
+  transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -502,10 +503,9 @@ footer {
   transform: translateY(0);
 }
 
-
 /*ハンバーガーメニュー (スマホ用)*/
 .hamburger {
-  display: none; 
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -523,7 +523,7 @@ footer {
     z-index: 200;
     cursor: pointer;
   }
-  
+
   .hamburger span {
     display: block;
     width: 24px;
@@ -533,10 +533,16 @@ footer {
     left: 8px;
     transition: 0.3s;
   }
-  
-  .hamburger span:nth-child(1) { top: 12px; }
-  .hamburger span:nth-child(2) { top: 19px; }
-  .hamburger span:nth-child(3) { top: 26px; }
+
+  .hamburger span:nth-child(1) {
+    top: 12px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 19px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 26px;
+  }
 
   /* クリック時 */
   .hamburger.active span:nth-child(1) {
@@ -555,7 +561,7 @@ footer {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%; 
+    right: -100%;
     width: 80%;
     height: 100vh;
     background: rgba(255, 255, 255, 0.98);
@@ -564,7 +570,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
   }
 
   /* メニューが開いた時 */
@@ -577,7 +583,7 @@ footer {
     text-align: center;
     gap: 40px;
   }
-  
+
   .navi li a {
     font-size: 1.5rem;
     color: #333;
