@@ -286,6 +286,9 @@ header {
   margin-bottom: 40px;
 }
 
+.skill-top h2 {
+}
+
 .skill-container {
   display: flex;
   flex-wrap: wrap;
