@@ -357,18 +357,7 @@ header {
   position: relative;
 }
 
-.bird_image {
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  margin: 0;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #fff;
-}
-.bird_image img {
-    border-radius: 50%;
-}
+
 
 .box__body h2 {
   font-size: 1.2rem;
