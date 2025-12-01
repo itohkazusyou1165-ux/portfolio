@@ -1,13 +1,13 @@
 //  ハンバーガーメニューの機能
 
-const hamburgerBtn = document.querySelector("#js-hamburger"); 
-const nav = document.querySelector("#js-nav"); 
+const hamburgerBtn = document.querySelector("#js-hamburger");
+const nav = document.querySelector("#js-nav");
 
 // ボタンが存在する場合のみ実行
 if (hamburgerBtn && nav) {
   hamburgerBtn.addEventListener("click", function () {
     this.classList.toggle("active");
-    nav.classList.toggle("active"); 
+    nav.classList.toggle("active");
   });
 
   // メニュー内のリンクをクリックしたら閉じる
@@ -18,7 +18,6 @@ if (hamburgerBtn && nav) {
     });
   });
 }
-
 
 //  スクロールトップ機能
 
@@ -33,12 +32,11 @@ if (goTopBtn) {
   });
 }
 
-
-//. Intersection Observer (アニメーション)
+//. Intersection Observer
 
 const options = {
   root: null,
-  rootMargin: "0px 0px -10% 0px", 
+  rootMargin: "0px 0px -10% 0px",
   threshold: 0,
 };
 
