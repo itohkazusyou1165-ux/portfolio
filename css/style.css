@@ -286,9 +286,6 @@ header {
   margin-bottom: 40px;
 }
 
-.skill-top h2 {
-}
-
 .skill-container {
   display: flex;
   flex-wrap: wrap;
@@ -334,13 +331,13 @@ header {
 
 .box-area {
   display: grid;
-  grid-template-columns: 1fr; /* スマホは1列 */
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
 @media (min-width: 768px) {
   .box-area {
-    grid-template-columns: repeat(3, 1fr); /* PCは3列 */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -449,7 +446,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  /* ヘッダー */
   header {
     position: relative;
     flex-direction: column;
@@ -477,13 +473,11 @@ footer {
     font-size: 3rem;
   }
 
-  /* フォントサイズ調整 */
   .title {
     font-size: 2rem;
   }
 }
 
-/*  追加: アニメーション用（初期状態を透明に） */
 .career .history__item,
 .Myskill,
 .box,
@@ -495,7 +489,6 @@ footer {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* animクラスがついたら表示 */
 .career .history__item.anim,
 .Myskill.anim,
 .box.anim,
@@ -506,13 +499,11 @@ footer {
   transform: translateY(0);
 }
 
-/*ハンバーガーメニュー (スマホ用)*/
 .hamburger {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* ボタンの見た目 */
   .hamburger {
     display: block;
     position: fixed;
@@ -547,7 +538,6 @@ footer {
     top: 26px;
   }
 
-  /* クリック時 */
   .hamburger.active span:nth-child(1) {
     top: 19px;
     transform: rotate(45deg);
@@ -576,7 +566,6 @@ footer {
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* メニューが開いた時 */
   .nav-menu.active {
     right: 0;
   }
