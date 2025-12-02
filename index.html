@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio_Ito</title>
 
+    <!-- cssフォルダ挿入 -->
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/Gemini_Generated_Image_slm9m9slm9m9slm9.png"
-      type="image/x-icon"
-    />
 
+    <!-- resscss直書き -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/ress@5.0.2/dist/ress.min.css"
     />
+    <!-- Googleフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lexend:wght@100..900&family=Shippori+Mincho&display=swap"
       rel="stylesheet"
     />
+    <!-- jsフォルダ導入 -->
     <script type="module" src="js/script.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
+      <!-- header部分 -->
       <header class="header">
         <h1>
           <img
-            src="images/Gemini_Generated_Image_slm9m9slm9m9slm9.png"
+            src="images/header_logo.png"
             alt="ロゴ"
             width="100"
             height="100"
           />
         </h1>
 
+        <!-- ハンバーガーメニュー部分 -->
         <button class="hamburger" id="js-hamburger">
           <span></span>
           <span></span>
@@ -54,6 +55,7 @@
         </nav>
       </header>
 
+      <!-- ファーストビュー -->
       <main>
         <section class="view">
           <div class="view-text">
@@ -66,7 +68,7 @@
           </figure>
         </section>
       </main>
-
+      <!-- Myprofile欄 -->
       <section class="profile" id="profile">
         <div class="profile-top">
           <h2 class="title">Profile</h2>
@@ -80,28 +82,43 @@
           />
 
           <div class="profile-txt">
-            <h3>
-              1800kmで培った「粘り強さ」を、<br />コードの正確性と安定性に注ぎます。
-            </h3>
+            <h3>一歩ずつ、確実に積み上げること</h3>
             <br />
             <p>
               伊藤和輝と申します。
               今年7月より、Webコーディングとフロントエンド開発を専門とする職業訓練校にて、就職後の即戦力となるためのスキルを集中して習得中です。
               私の強みは、
               <strong>目標達成に向けた粘り強い継続力です。</strong
-              >この力は、ランニングで1800kmを走り続けた経験で培われました。<br />
+              >この力は、趣味から始めたランニングで1800kmを走り続けた経験で培われました。<br />
             </p>
             <br />
             <p>
-              Web・フロントエンド開発の訓練校にて、即戦力となるべく技術の習得に励んでいます。
-              1800kmを走り抜いた粘り強さを活かし、一歩一歩、正確でメンテナンス性の高い実装を積み重ねます。
-              変化の速い業界で常に学び続け、確かな品質で貴社に貢献したいと考えております。
+              職業訓練校では HTML・CSS・JavaScript・React を学び、
+              デザインカンプ通りのコーディングや
+              基本的なレイアウト実装ができるようになりました。
+            </p>
+            <p>
+              自宅学習では code.jump を使い、 JavaScript を繰り返し練習。
+              pokeAPI を使ったおみくじアプリなど、
+              小さな機能を理解し」作れるようになりました。
+            </p>
+            <p>
+              これらの経験から、
+              <strong
+                >継続して学び続ける力 が自分の強みだと感じています。</strong
+              >
+            </p>
+            <br />
+            <p>
+              今後は React を中心に技術を磨き、 使いやすく分かりやすいUIを作れる
+              フロントエンドエンジニアを目指します。
             </p>
             <br />
           </div>
         </div>
       </section>
 
+      <!-- 経歴部分 -->
       <section class="career" id="career">
         <div class="career-top">
           <h2 class="title">Career</h2>
@@ -118,12 +135,18 @@
                     >大学時代、神戸元町の株式会社ユニクロで接客を経験</strong
                   >
                 </p>
+                <br />
                 <p>
-                  大学2年生の時にUNIQLOで接客・販売・品だし・レジ業務等幅広く経験。
-                  コロナ渦で売り上げが低迷した際に、5分ごとのかご配りや声掛けを徹底し、
-                  <br />アンケート評価店舗内で一位になり昇格する。
+                  大学2年次より勤務。コロナ禍で客足が遠のいた際、
+                  「待つ」のではなく「自分から動く」接客を徹底しました。
+                  具体的には、5分ごとのカゴ配りや活気ある声掛けを継続的に実施。
+                  この地道な取り組みがお客様に評価され、アンケート評価で店舗1位を獲得し、
+                  昇格することができました。
                 </p>
-                <p class="highlight">柔軟な対応、接客の工夫が大事と知る。</p>
+                <br />
+                <p class="highlight">
+                  困難な状況でも、自ら課題を見つけ行動する力を養いました。
+                </p>
               </div>
             </div>
           </div>
@@ -137,9 +160,14 @@
                     >大学卒業後、株式会社ナツバへ携帯販売員として入社</strong
                   >
                 </p>
+                <br />
                 <p>
-                  学生時代の接客が楽しかったため、携帯販売業へ転身。業務は携帯販売促進業務、
-                  店舗やデパートで声掛けを行う予定だったが、一身上の都合により退職。
+                  接客のプロフェッショナルを目指し、
+                  ユニクロから携帯販売業へ転身しました。
+                  入社後の研修で営業の基礎を学びましたが、組織上の都合により配属が見送られたため、
+                  早期に退職。
+                  予期せぬ空白期間ができましたが、これを「自身のキャリアを見つめ直す機会」と捉え、
+                  以前から興味のあった旅行業への挑戦を決意しました。
                 </p>
               </div>
             </div>
@@ -154,22 +182,24 @@
                     >神戸新聞興産株式会社・旅行部へ一般事務として派遣社員で入社</strong
                   >
                 </p>
+                <br />
                 <p>
-                  大学時代、観光学科だったのもあり入社。添乗員業務・一般事務・電話応対・資料作成・カウンター業務・旅行企画など
-                  幅広く業務・HP編集更新作業を担当した。 <br />
+                  旅行企画や添乗、HP更新業務に従事。
+                  トラブル発生時のツアーをコミュニケーション力で成功に導くなど、
+                  顧客満足度の向上に貢献しました。
                 </p>
                 <p>
-                  自ら企画した桜のツアーで満員御礼だったが一切桜が咲いておらず大雨でもありながら、
-                  持ち前のマイクパフォーマンスで盛り上げ、クレームゼロ固定顧客も獲得し売り上げ貢献した。
+                  しかし、
+                  <strong>
+                    お客様から指摘された「HPの使いづらさ」を自力で改善できない悔しさを経験。
+                  </strong>
+                  この出来事を機に、使い手視点を持ったエンジニアになることを決意しました。
+                  <br />
+                  <br />
                 </p>
-                <p>
-                  しかしお客様からのHPの編集や使いにくさを 指摘され、
-                  <strong
-                    >大幅な変更や編集が不可能でありエンジニアになることを決意。</strong
-                  >
-                </p>
+
                 <p class="highlight">
-                  コミュニケーションの大切さを深く学んだ。
+                  トラブルを価値に変える「臨機応変な対応力」が大事だと感じた
                 </p>
               </div>
             </div>
@@ -178,15 +208,17 @@
           <div class="history__item">
             <div class="history__inner">
               <div class="history__text">
-                <h3>2025年7月〜</h3>
+                <h3>2025年7月〜現在</h3>
                 <p>
                   <strong>創造社リカレントスクールへ入校 </strong>
                 </p>
+                <br />
                 <p>
-                  入校前からHTMLやCSSは独学で学んだ状態で入校。HTMLからCSS、JavaScriptやReactを学ぶ。
+                  入校前からHTMLやCSSは独学でprogate携帯アプリで学んだ状態で入校。HTMLからCSS、JavaScriptやReactを深く学ぶ。
                   自分でFigmaでゼロから作成し製作したものや、APIを使っておみくじを作ったり、LP作成や自分でCodeJump
-                  さんの本も購入しサイト実務を想定し製作を行った。
+                  さんの本も購入しサイト実務を想定し製作を行った。現在はudemyでreact教材js教材購入しさらに深く勉強中。
                 </p>
+                <br />
                 <p class="highlight">
                   努力し続けることや継続し続けることが大事だと学んだ
                 </p>
@@ -196,6 +228,7 @@
         </div>
       </section>
 
+      <!-- スキル一覧 -->
       <section class="Myskill" id="Myskill">
         <div class="skill-top">
           <h2 class="title">Web skill</h2>
@@ -222,24 +255,30 @@
           <p>
             私はフロントエンドを中心に、HTML・CSS
             を使ったデザインカンプ通りのコーディングや、
-            レスポンシブ対応を行うことができます。
+            基本的なレスポンシブ対応を行うことができます。
           </p>
+          <br />
           <p>
             JavaScript では DOM 操作やイベント処理、API
-            を使用したデータ取得まで一通り実装でき、 実際に pokeAPI
+            を使用したデータ取得まで一通り実装したり、 実際に pokeAPI
             を使ったおみくじアプリも制作しました。
           </p>
           <br />
           <p>
             React ではコンポーネント分割や state / props を使った基本的な UI
-            の構築が可能です。 これまでに 0 からデザインした Web
-            サイトの制作や、職業訓練校での個人・チーム制作
-            にも取り組み、VSCode・Git・GitHub といった開発ツールを使用しながら、
-            自走して学習と実装を続けています。
+            の構築が可能ですが、今現在も勉強中です。 これまでに 0
+            からデザインした Web サイトの制作や、職業訓練校での個人・チーム制作
+            にも取り組み、VSCode・Git・GitHub といった開発ツールを使用し、
+            <br />
+          </p>
+          <p>
+            自宅でも書籍を使用したり、Udemy
+            で勉強を毎日行い学習と実装を続けています。
           </p>
         </div>
       </section>
 
+      <!-- 作品一覧 -->
       <section class="Works" id="Works">
         <div class="works-top">
           <h2 class="title">Works</h2>
@@ -249,11 +288,14 @@
         <div class="box-area">
           <div class="box">
             <figure class="box__image">
-              <img src="images/1.png" alt="作品1" />
+              <img
+                src="images/summer_vacation 2025-12-01 14.16.51.png"
+                alt="作品1"
+              />
             </figure>
             <div class="box__body">
               <h2>休み課題</h2>
-              <p class="box-text">flexboxを使用<br />hamburgerメニュー導入</p>
+              <p class="box-text">flexboxを使用<br /></p>
               <div class="box-link">
                 <p class="box_txt">html/css</p>
                 <p>
@@ -267,7 +309,7 @@
           </div>
           <div class="box">
             <figure class="box__image">
-              <img src="images/2.png" alt="作品2" />
+              <img src="images/pokeapi.png" alt="作品2" />
             </figure>
             <div class="box__body">
               <h2>個人制作</h2>
@@ -284,7 +326,7 @@
           </div>
           <div class="box">
             <figure class="box__image">
-              <img src="images/3.png" alt="作品3" />
+              <img src="images/buzzly_2025-12-01 14.12.07.png" alt="作品3" />
             </figure>
             <div class="box__body">
               <h2>個人制作</h2>
@@ -304,6 +346,7 @@
         </div>
       </section>
 
+      <!-- なりたい将来像 -->
       <section class="My-vision">
         <div class="vision-top">
           <h2 class="title">Vision</h2>
@@ -311,43 +354,37 @@
         </div>
 
         <div class="vision-txt">
-          <h2>一歩ずつ、確実に積み上げること</h2>
-          <p>私は 「一歩ずつ積み上げる姿勢」 を大切にしています。</p>
-          <br />
+          <h2>技術を積み上げ、ユーザーに「使いやすさ」を届けるエンジニアへ</h2>
+
           <p>
-            職業訓練校では HTML・CSS・JavaScript・React を学び、
-            デザインカンプ通りのコーディングや
-            基本的なレイアウト実装ができるようになりました。
-          </p>
-          <p>
-            自宅学習では code.jump を使い、 JavaScript を繰り返し練習。 pokeAPI
-            を使ったおみくじアプリなど、
-            小さな機能を自力で作れるようになりました。
-          </p>
-          <p>
-            これらの経験から、
-            <strong>継続して学び続ける力 が自分の強みだと感じています。</strong>
+            私の目指すエンジニア像は、新しい技術を一歩ずつ着実に習得し、
+            それを「ユーザーにとっての価値」に変換できる存在です。
           </p>
           <br />
           <p>
-            今後は React を中心に技術を磨き、 使いやすく分かりやすいUIを作れる
+            これまでは職業訓練校や自宅学習を通じて、HTML/CSSの基礎からReact、API連携まで、
+            一つひとつの技術を丁寧に学んできました。
+            それらはすべて、「思い描いたUIを正確に形にする」ための土台作りでした。
+          </p>
+          <br />
+
+          <br />
+          <p>
+            今後はこの積み上げる姿勢を崩さず、 使いやすく分かりやすいUIを作れる
             フロントエンドエンジニアを目指します。
           </p>
         </div>
       </section>
 
+      <!-- お問い合わせ部分 -->
       <footer>
         <div class="footer-text" id="footer-text">
           <h2>Contact</h2>
           <p>お問い合わせ</p>
           <div class="image-area">
-            <img src="images/icons8-ツイッターx-90.png" alt="X" width="50" />
-            <img
-              src="images/icons8-インスタグラム-96.png"
-              alt="Instagram"
-              width="50"
-            />
-            <img src="images/icons8-シェア-96.png" alt="Share" width="50" />
+            <img src="images/icons8-x-90.png" alt="X" width="50" />
+            <img src="images/Instagram.png" alt="Instagram" width="50" />
+            <img src="images/share-96.png" alt="Share" width="50" />
           </div>
           <div id="go-top">
             <p>Scroll</p>
