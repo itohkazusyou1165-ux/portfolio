@@ -235,7 +235,7 @@ header {
   z-index: 1;
 }
 
-/* 各アイテムぶぶん */
+/* 各アイテム */
 .history__item {
   position: relative;
   padding: 0 0 40px 40px;
@@ -397,26 +397,8 @@ header {
   position: relative;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-.bird_image {
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  margin: 0;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #fff;
-}
-.bird_image img {
-  border-radius: 50%;
-}
->>>>>>> 0d1760da92daa44ef595f7c4f1be91aed7969327
 
-=======
->>>>>>> e7537721653cc86f68cc3807e0b7e76b36c50ef8
 .box__body h2 {
   font-size: 1.2rem;
   margin-top: 10px;
